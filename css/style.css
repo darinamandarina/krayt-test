@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,500,600,700|Roboto:300,400,700&display=swap");
+#home .text .text__header {
+  font-size: 54px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600; }
+
+#home .text .text__under-header {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
+
+body {
+  margin: 0;
+  width: 1140px; }
+
+#home {
+  height: 700px;
+  margin: 0 auto;
+  padding: 0 21vw;
+  width: 100%;
+  background: -webkit-linear-gradient(left, #fd712c, #f21780);
+  background: linear-gradient(to right, #fd712c, #f21780); }
+  #home nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    #home nav .logo .logo__img {
+      background: url(../pics/logo.png) no-repeat;
+      padding-top: 30px;
+      padding-right: 52px; }
+    #home nav .logo .logo__brandword {
+      font-size: 54px;
+      font-family: 'Dosis', sans-serif;
+      font-weight: 700;
+      color: #fff; }
+    #home nav .menu {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 460px; }
+      #home nav .menu a {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        color: #fff; }
+  #home .text {
+    width: 555px;
+    color: #fff; }
+    #home .text .text__under-header {
+      padding: 23px 0; }
+    #home .text .point > div:nth-child(n) {
+      padding-bottom: 19px; }
+  #home .phones-banner {
+    position: absolute;
+    right: -1px;
+    top: 79px;
+    padding-left: 965px;
+    height: 570px;
+    background: url("../pics/iPhones.png") no-repeat; }
+
+.point__icon {
+  background: url("../pics/point.png") no-repeat;
+  height: 16px;
+  padding-right: 36px; }

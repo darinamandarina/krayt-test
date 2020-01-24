@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500,600,700|Roboto:300,400,700&display=swap');
+
+%header{
+    font-size: 54px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+}
+%under-header{
+    font-size:14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+body{
+    margin: 0;
+    width: 1140px;
+
+}
+
+#home{
+    height: 700px;
+    margin: 0 auto;
+    padding: 0 21vw;
+    width: 100%;
+    background: linear-gradient(to right, #fd712c, #f21780);
+    nav{
+        display: flex;
+        justify-content: space-between;   
+        .logo{
+            .logo__img{
+                background: url(../pics/logo.png) no-repeat;
+                padding-top: 30px;
+                padding-right: 52px;
+            }
+            .logo__brandword{
+                font-size: 54px;
+                font-family: 'Dosis', sans-serif;
+                font-weight: 700;
+                color:#fff;
+            }
+        }
+        .menu{    
+            display: flex;     
+            justify-content: space-around;
+            align-items: center;
+            width: 460px;
+            a{
+                font-size:14px;
+                font-family: 'Roboto', sans-serif;
+                text-decoration: none;
+                color: #fff
+                
+            }
+        }
+    }
+    .text{
+        width: 555px;
+        color: #fff;
+        .text__header{
+            @extend %header; 
+        }
+        .text__under-header{
+            @extend %under-header; 
+            padding: 23px 0;
+        }
+        .point{
+            &>div:nth-child(n){
+                padding-bottom: 19px;
+            }
+        }
+        
+    }
+    .phones-banner{
+        position: absolute;
+        right: -1px;
+        top: 79px;
+        padding-left: 965px;
+        height:  570px;
+        background: url('../pics/iPhones.png') no-repeat;
+    }
+}
+
+.point__icon{
+    background: url('../pics/point.png')  no-repeat;
+    height: 16px;
+    padding-right: 36px;
+
+}
